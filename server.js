@@ -1,6 +1,7 @@
 var express = require('express'); //to build an express app
 var http = require('http'); //to use rq and response
 var path = require('path');  //to use path.join
+var favicon = require('serve-favicon');
 var app = express();  //create express app to use http varaibles
 var bodyParser = require('body-parser'); //parse post data
 app.use(bodyParser.urlencoded());
