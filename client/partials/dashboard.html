@@ -1,0 +1,76 @@
+<div ng-controller="topic-controller">
+
+	<nav class="navbar navbar-default" role="navigation">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<span class="navbar-brand brandicon">BusyMind</span>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<div class="row">
+					<div class="col-lg-6">
+					    <div class="input-group">
+					      <input type="text" class="form-control" placeholder="Search for..." ng-model="search">
+					      <span class="input-group-btn">
+					        <button class="btn btn-srch" type="button">Search</button>
+					      </span>
+					    </div><!-- /input-group -->
+					 </div>
+					 <ul class="nav navbar-nav navbar-right ">
+						
+						<li class="navbar-links"><button class="btn btn-srch" ng-click="logout()">Signout</button></li>					
+					</ul>
+				</div>				
+			</div><!-- /.navbar-collapse -->
+		</nav>
+	<div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar" >
+           	<h3> Add a new Topic </h3>
+           	<input type="text" ng-model="new_topic.topic" placeholder="Enter your thought..">
+           	
+           	<textarea ng-model="new_topic.description" rows=5  placeholder="Enter brief decription.."></textarea>
+           	
+           	<select ng-model="new_topic.category" class="form-control">
+           		<option value="">Select Category</option>
+				<option ng-repeat="category in categories | orderBy: 'category'">{{category.category}}</option>
+			</select>
+
+			<button class="btn btn-danger" ng-click="addTopic(userinfo._id)">Submit</button> <a href ng-click="showCategory = !showCategory">Add New Category</a> 
+			<div ng-show="showCategory">
+				<h4> Add New Category </h4>
+	           	<input type="text" ng-model="new_category.text" placeholder="Enter Category..">
+	           	<button class="btn btn-danger" ng-click="addCategory(new_category)">Add</button>
+            </div>
+
+
+		</div>
+		<div class="col-sm-9  col-md-10 main" >
+			<h2> Welcome {{ userinfo.username }} </h2>
+			<h3> Here are some trending thoughts... </h3>
+			
+				<div class="panel topic" ng-repeat="topic in topics | orderBy: '-created_date'| filter: search">
+
+					<div class="panel-heading">
+					   <h4 class="panel-title"><a href="#/user/{{topic._user._id}}" class="username" > {{topic._user.username}}</a> </h4>
+					</div>
+					<div class="panel-body">
+					    <h4><a href="#/topic/{{topic._id}}">{{topic.topic}}</a></h4>
+					    ({{topic.posts.length}}Posts)
+					</div>
+					<div class="panel-footer" >Category:<p ng-bind="topic.category "></p>
+
+					 	<h6 class="ng-hide">{{topic.created_date}}</h6>
+					</div>	
+				</div>
+		</div>
+	</div>
+	</div>	
+</div>	

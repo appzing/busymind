@@ -1,0 +1,93 @@
+
+body{
+	margin:0;
+	padding:0;
+	font-family: Comic Sans, Comic Sans MS ;
+}
+
+/*************************Login Page Starts****************************/	
+.home{
+	background: url('../images/mindmap.jpg') no-repeat;
+	background-size: cover;
+	width:900px;
+	height:750px;
+}
+
+.login-form{
+	padding-left: 40px;
+	padding-right: 40px;	
+}
+
+.heading1{
+	color:#FA2E44 !important;
+}
+.login-panel{
+	background-color: #F7FE00;
+}
+
+.btn-signin{
+	background-color:#FA2E44 !important;
+}
+
+/*************************Login Page Ends****************************/	
+/*************************Dashboard Starts****************************/	
+
+.sidebar{
+	height:100%;
+	background-color: #ffe941;
+}
+
+.sidebar input, textarea, select{
+	width:100%;
+	margin-bottom: 5px;
+}
+.topic{
+	width:175px;
+	height:150px;
+	background-color: #ffe941;
+	color:#222;	
+	text-align: center;
+	display:inline-block;
+	margin-right: 18px;
+	vertical-align: top;
+}
+
+.topic a{
+	color:#3300FF ;
+}
+.topic a:hover, .topic a:focus{
+	color:#3300CC ;
+}
+
+.username{
+	color:#000099 !important;
+}
+
+.panel-footer{
+	background-color: #FA2E44;
+}
+
+/*************************Dashboard Starts****************************/	
+/*************************Topic Starts****************************/	
+.jumbo{
+	background-color: #ffe941;
+	padding-left: 40px;
+	margin-top: 10px;
+}
+
+.comments{
+	margin-left: 150px;
+	background-color: #5CFE8D;
+	border-radius: 6px;
+}
+.add-comment{
+	background-color: #5CFE8D;
+}
+
+.user{
+	background-color: #ffe941;
+	width:40%;
+	margin:200px auto;
+}
+
+/*************************Topic Ends****************************/	

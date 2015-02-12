@@ -1,0 +1,105 @@
+.navbar-default {
+  background-color: #FA2E44;
+  border-color: transparent;
+  border-radius:0px;
+  margin-bottom: 0;
+}
+.navbar-default .navbar-brand {
+  background-color: #FA2E44;
+  color: #f8f9ff;
+  margin-right: 380px;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  background-color: #ffe941;
+  color: #222;
+}
+.navbar-default .navbar-text {
+  color: #222;
+}
+.navbar-header{
+background-color: #FA2E44;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #222;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+ background-color: #ffe941;
+  color: #f8f9ff;
+  line-height: 1.42857143;
+  border-radius: 6px;
+
+}
+.navbar-default .navbar-nav > li > .active{
+  background-color: #ffe941;
+  color: #f8f9ff;
+  line-height: 1.42857143;
+  border-radius: 6px;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  background-color: #ffe941;
+  color: #222;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #ffe941;
+  background-color: #FA2E44;
+}
+.navbar-default .navbar-toggle {
+  border-color: #FA2E44;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #FA2E44;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #f8f9ff;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  background-color: #FA2E44;
+  border-color: #f8f9ff;
+
+}
+.navbar-default .navbar-link {
+  color: #f8f9ff;
+}
+.navbar-default .navbar-link:hover {
+  color: #ffe941;
+}
+
+
+.brandicon{
+  color:#ffe941;
+}
+
+.btn-srch{
+  background-color: #ffe941 ;
+
+}
+
+li > .btn-srch{
+  background-color: #FA2E44;
+  margin-top: 7px;
+}
+li > .btn-srch:hover, li >.btn-srch:focus{
+  margin-top: 0px;
+ background-color: #ffe941;
+  color: #f8f9ff;
+height:49px;
+  border-radius: 6px;
+}
+
+
+.input-group{
+  margin-top:5px;
+}
+
+.navbar-links{
+  margin-right: 40px !important;
+}

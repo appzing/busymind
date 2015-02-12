@@ -1,0 +1,151 @@
+<html>
+<head>
+	<title>Busy Mind</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"/></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-route.min.js"/></script>
+
+	<link rel="stylesheet" href="./assets/stylesheets/style.css">
+	<link rel="stylesheet" href="./assets/stylesheets/style-navbar.css">
+
+	
+	<!-- Include app.js -->
+	<script type="text/javascript" src="app.js"></script>
+
+	<!-- Include controller files -->
+	<script type="text/javascript" src="./controllers/user-controller.js"></script>
+	<script type="text/javascript" src="./controllers/topic-controller.js"></script>
+	<script type="text/javascript" src="./controllers/post-controller.js"></script>
+	<script type="text/javascript" src="./controllers/comment-controller.js"></script>
+
+	<!-- Include factory files -->
+	<script type="text/javascript" src="./factories/user-factory.js"></script>
+	<script type="text/javascript" src="./factories/topic-factory.js"></script>
+	<script type="text/javascript" src="./factories/post-factory.js"></script>
+	<script type="text/javascript" src="./factories/comment-factory.js"></script>
+	<script type="text/javascript" src="./factories/category-factory.js"></script>
+
+	<style type="text/css">
+	#wrapper{
+		width:1000;
+		height:700;
+		margin:0 auto;
+		background: #FAFAFA;
+	}
+	#login{
+		width:400;
+		display: inline-block;	
+		border: 2px solid gray;
+		margin-top:200;
+		margin-left:100;
+		padding-top:20;
+		padding-left:50;
+		padding-right:20;
+		padding-bottom:50;
+		
+	}
+	#register{
+		width:400;
+		display: inline-block;
+		border: 2px solid gray;
+		vertical-align: top;
+		margin-top:200;
+		margin-left:100; 
+		padding-top:30;
+		padding-left:50;
+		padding-right:10;
+		padding-bottom:10;
+		
+
+	}
+	#login-table{
+		width:400;	
+	}
+
+	.label{
+		width:150;
+	}
+
+	#header{
+		height:50;
+		color:white;
+		background-color: black;
+	}
+	#header h2{
+		padding:10px;
+	}
+	/*Start style for dashboard*/
+	/*#dashboard{
+		padding:20;
+	}
+	
+	#topics{
+		width:1000;
+	
+	}
+ 	.topics{
+		border-collapse: collapse;
+		
+	}
+	.border{
+		width:250;
+		border:2px solid black;
+		border-collapse: collapse;
+		text-align: center;
+	}
+	#addTopic input, select {
+		width:580px;
+		border-collapse: collapse;
+	}
+	#messages{
+		width:300;
+		margin:0 auto;
+	}
+	.errors{
+		color:red;
+		font-size:20px;
+		font-weight: bold
+	}
+*/
+
+	/*end style for dashboard*/
+	</style>
+	<script>
+	boardApp.config(function($routeProvider){
+		$routeProvider
+			.when('/',{
+				templateUrl: '/partials/login.html'
+			})
+			.when('/dashboard',{
+				templateUrl: '/partials/dashboard.html'
+			})
+			.when('/topic/:id',{
+				templateUrl: '/partials/topic.html'
+			})
+			.when('/user/:id',{
+				templateUrl: '/partials/user.html'
+			})
+			.otherwise({
+	     		 redirectTo: '/'
+	      	});
+	});
+	</script>
+</head>
+<body ng-App='boardApp'>
+
+		<div ng-view="">
+		</div>
+		
+</body>
+</html>
