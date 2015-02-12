@@ -8,7 +8,8 @@ var connect = function() {
 	//specify options when mongoose connects to mongodb
 	var options = { server: { socketOptons: {keepAlive: 1}}}
 	//connect to our mongodb database server with options specified above
-	mongoose.connect('mongodb://busymind.herokuapp.com/boardApp', options)
+	// mongoose.connect('mongodb://busymind.herokuapp.com/boardApp', options)
+	mongoose.connect('mongodb://localhost/boardApp', options)
 }
 //actually connect to the database "DONT FORGET THIS"
 connect();
