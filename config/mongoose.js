@@ -9,8 +9,8 @@ var connect = function() {
 	var options = { server: { socketOptons: {keepAlive: 1}}}
 	//connect to our mongodb database server with options specified above
 	//mongoose.connect('mongodb://busymind.herokuapp.com/boardApp', options)
-	//mongoose.connect('mongodb://heroku_app33914762:u3fiujrmlksiirg0h8jrtpts0e@ds045031.mongolab.com:45031/heroku_app33914762', options);
-	mongoose.connect('mongodb://localhost/boardApp', options);
+	mongoose.connect('mongodb://heroku_app33914762:u3fiujrmlksiirg0h8jrtpts0e@ds045031.mongolab.com:45031/heroku_app33914762', options);
+	//mongoose.connect('mongodb://localhost/boardApp', options);
 }
 //actually connect to the database "DONT FORGET THIS"
 connect();
