@@ -37,14 +37,14 @@
 		</div>
 		<div class="col-sm-8  col-md-9 main" >
 			<div class="jumbotron jumbo">
-	            <h5><a href="#/user/{{topicInfo._user}}">{{ topicInfo.username }}</a> posted a topic..</h5>
+	            <h4><a href="#/user/{{topicInfo._user}}">{{ topicInfo.username }}</a> posted a topic..</h4>
 	            <h3>{{ topicInfo.topic }}</h3><h4>Description:&nbsp;&nbsp;{{ topicInfo.description}}</h4>
 			</div>
 			<row ng-repeat="post in posts track by $index">
 				<div class="panel">
 
 					<div class="panel-heading">
-					   <h5><a href="#/user/{{post._user._id}}">{{post._user.username}}</a>&nbsp;{{post.post}}</h5>
+					   <h3><a href="#/user/{{post._user._id}}">{{post._user.username}}</a>&nbsp;{{post.post}}</h3>
 				  	</div>
 					  <div class="panel-body comments">
 					    <p ng-repeat="comment in comments |filter:post._id">	<a href="#/user/{{comment._user}}">{{comment.commenter}}</a>:{{comment.comment}}</p><a href ng-click="showComment = !showComment">Comment</a>
