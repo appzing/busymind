@@ -32,7 +32,6 @@ boardApp.controller('post-controller', function($scope, $location, $routeParams,
 	}		
 	$scope.addPost = function(info){
 		var postObjects = [];
-		console.log("info is", info); //info has logged user information
 		if(info.post == undefined || info.post == ''){
 			$scope.errors = {error_message: "Fields cannot be blank"};
 				return;

@@ -38,7 +38,7 @@ boardApp.factory('UserFactory', function ($http, $location){
 	factory.getClickedUser = function(id, callback){
 		$http.post('/clickeduser_json',id).success(function (data){
 			callback(data[0]);
-		})
+		});
 
 	}		
 	return factory;

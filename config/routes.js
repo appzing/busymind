@@ -39,7 +39,6 @@ module.exports = function(app){
 		categories.show(req, res);
 	})
 	app.post('/newCategory_json', function (req, res){
-		console.log('in routes', req);
 		categories.create(req, res);
 	})
 	

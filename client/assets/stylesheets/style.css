@@ -3,53 +3,148 @@ body{
 	margin:0;
 	padding:0;
 	font-family: Comic Sans, Comic Sans MS ;
+	font-family: helvetica,arial,verdana;
+
+	font-weight: lighter;
 }
+
+CSS: 
+h1 {
+	font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.3999996185303px;
+}
+h3 {
+	font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 15.3999996185303px;
+}
+p {
+	font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+}
+blockquote {
+	font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+	font-size: 21px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 30px;
+}
+pre {
+	font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 18.5714302062988px;
+}
+
 
 /*************************Login Page Starts****************************/	
 .home{
 	background: url('../images/mindmap.jpg') no-repeat;
 	background-size: cover;
-	width:900px;
-	height:750px;
+	display: inline-block;
+	height:100%;
+}
+.right-panel{
+	padding:0;
+	display: inline-block;
+	vertical-align: top;
 }
 
 .login-form{
 	padding-left: 40px;
-	padding-right: 40px;	
+	padding-right: 40px;
+	margin-bottom: 35px;	
 }
 
 .heading1{
-	color:#FA2E44 !important;
+	color:#B30808 !important;
 }
 .login-panel{
-	background-color: #F7FE00;
+	margin-top: 0;
+	background-color: #FFD500;
+}
+.welcome{
+	margin-bottom: 20px;
+}
+.form-signin-heading{
+	margin-top: 2%;
+}
+.signup{
+	padding-left: 10%;
 }
 
 .btn-signin{
-	background-color:#FA2E44 !important;
+	background-color:#B30808 !important;
+	margin-bottom: 5%;
 }
 
 /*************************Login Page Ends****************************/	
 /*************************Dashboard Starts****************************/	
-
-.sidebar{
-	height:100%;
-	background-color: #ffe941;
+ul.nav.navbar-nav{
+width:20%;
 }
+
+ul.nav.navbar-nav.navbar-right{
+	background-color: #fafafa;
+	width:7%;
+}
+li.navbar-links{
+	margin-right: 0px !important;
+}
+
+.navbar-form{
+	margin: 0;
+	padding:0;
+}
+.sidebar{
+	/*background-color: #222;*/
+	height:100%;
+	padding-left: 1%;
+	margin-top: 4%;
+	box-shadow: 10px 10px 5px gray;
+}
+
+
 
 .sidebar input, textarea, select{
 	width:100%;
 	margin-bottom: 5px;
+
+}
+.main{
+	margin-top:60px;
+	color:#222;
+	padding-left: 5%;
+
+}
+
+.main h2{
+	color:#000;
 }
 .topic{
 	width:175px;
-	height:150px;
-	background-color: #ffe941;
+	height:180px;
+	background-color: #fafafa;
 	color:#222;	
 	text-align: center;
 	display:inline-block;
 	margin-right: 18px;
 	vertical-align: top;
+	box-shadow: 2px 2px 1px #B30808;
 }
 
 .topic a{
@@ -59,35 +154,52 @@ body{
 	color:#3300CC ;
 }
 
+
+.topic-sidebar{
+	height:100%;
+	padding:1% 2% 1% 2%;
+	margin-top: 1%;
+	box-shadow: 10px 10px 5px gray;
+}
+.input-group{
+	width:100%;
+	margin-left: 0px !important;
+}
 .username{
 	color:#000099 !important;
 }
 
+
 .panel-footer{
-	background-color: #FA2E44;
+	margin:0;
+	padding:2.5%;
+	background-color: #e6e6e6;	
 }
 
 /*************************Dashboard Starts****************************/	
 /*************************Topic Starts****************************/	
 .jumbo{
-	background-color: #ffe941;
 	padding-left: 40px;
-	margin-top: 10px;
+	margin-top: 2%;
+	background-color: #fafafa;
+	color:#222;	
+	box-shadow: 2px 2px 1px #B30808;
 }
 
 .comments{
 	margin-left: 150px;
-	background-color: #5CFE8D;
+	background-color: #fafafa;
 	border-radius: 6px;
 }
 .add-comment{
-	background-color: #5CFE8D;
+	background-color: #fafafa;
 }
 
 .user{
-	background-color: #ffe941;
+	background-color: #fafafa;
 	width:40%;
 	margin:200px auto;
+	box-shadow: 2px 2px 1px #B30808;
 }
 
 /*************************Topic Ends****************************/	

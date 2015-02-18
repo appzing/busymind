@@ -2,9 +2,9 @@
 
 	<div class="container-fluid">
 		<div class="row">
-	        <div class="col-xs-12 col-sm-6 col-lg-8 home"></div>
-	        <div class="col-xs-6 col-lg-4">
-	        	<div class="panel text-center" id="welcome">
+	        <div class="col-xs-12 col-sm-8 col-md-8 home"></div>
+	        <div class="col-xs-12 col-sm-4 col-md-4 right-panel">
+	        	<div class="panel text-center welcome">
 	        		<h2 class="heading2"> Do you have a question?Do you want to share something you just did?Is there something in your mind you want to clear...</h2>
         			<h1 class="heading1"> Welcome to BusyMind</h1>
 	        		<h4 class="heading4"> Ask questions..Post recipes..Get help..Just free your BusyMind...</h4> 
@@ -14,16 +14,16 @@
 				</div>
 				<div class="panel login-panel">
 		        	<div class="form-signin login-form">
-				        <h3 class="form-signin-heading text-center">Welcome back.</h3>
+				        <h4 class="form-signin-heading text-center">Welcome back.</h4>
 				        <label for="inputEmail" class="sr-only">Email address</label>
 				        <input type="email" id="inputEmail"  class="form-control" placeholder="Email address" required autofocus ng-model="curr_user.email">
 				        <label for="inputPassword" class="sr-only">Password</label>
 				        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required ng-model="curr_user.password">
 				     	<p></p>
-				        <button class="btn btn-lg btn-block btn-signin" type="submit" ng-click="getUserInfo()">Sign in</button>
+				        <button class="btn btn-lg btn-block btn-comment" type="submit" ng-click="getUserInfo()">Sign in</button>
 	  				</div>
 	  				<div class="form-signin login-form">
-				        <h3 class="form-signin-heading text-center">New to Busy Mind?</h3><h4 class="text-center">Sign Up below!!</h4>
+				        <h4 class="signup">New to Busy Mind? Sign Up below!!</h4>
 				        <label for="inputUsername" class="sr-only">Username</label>
 				        <input type="text" id="inputUsername" class="form-control" placeholder="Username" required autofocus ng-model="new_user.username">
 				        <label for="inputEmail" class="sr-only">Email address</label>
@@ -33,7 +33,7 @@
 				        <label for="inputPassword" class="sr-only">Confirm Password</label>
 				        <input type="password" id="inputConfirmPassword" class="form-control" placeholder="Confirm Password" required ng-model="new_user.password_confirm">
 						<p></p>
-				        <button class="btn btn-lg btn-signin btn-block" type="submit" ng-click="addUser()">Register</button>
+				        <button class="btn btn-lg btn-comment btn-block" type="submit" ng-click="addUser()">Register</button>
 	  				</div>
 	  			</div>	
 

@@ -14,23 +14,28 @@
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<div class="row">
-				
-				 <ul class="nav navbar-nav navbar-right ">
-					<li><a href="#/dashboard">Dashboard</a></li>
-					<li class="navbar-links"><button class="btn btn-srch" ng-click="logout()">Signout</button></li>					
+				<ul class="nav navbar-nav">
+					<li>
+			            <a href="#/dashboard" class="btn btn-dash text-right">Dashboard</a>
+
+			         </li> 
+				</ul>
+				 <ul class="nav navbar-nav navbar-right">
+					
+					<li class="navbar-links"><button class="btn btn-signout" ng-click="logout()">Signout</button></li>					
 				</ul>
 			</div>				
 		</div><!-- /.navbar-collapse -->
 	</nav>
 <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar" >
+        <div class="col-sm-4 col-md-3 topic-sidebar" >
            	
         	<h3> Post Here: </h3>
         	<textarea ng-model="topicInfo.post" rows="5"></textarea>
-        	<button class="btn btn-danger" ng-click="addPost(topicInfo)">Post</button> 
+        	<button class="btn btn-comment btn-post" ng-click="addPost(topicInfo)">Post</button> 
 		</div>
-		<div class="col-sm-9  col-md-10 main" >
+		<div class="col-sm-8  col-md-9 main" >
 			<div class="jumbotron jumbo">
 	            <h5><a href="#/user/{{topicInfo._user}}">{{ topicInfo.username }}</a> posted a topic..</h5>
 	            <h3>{{ topicInfo.topic }}</h3><h4>Description:&nbsp;&nbsp;{{ topicInfo.description}}</h4>
@@ -39,14 +44,14 @@
 				<div class="panel">
 
 					<div class="panel-heading">
-					   <h4><a href="#/user/{{post._user._id}}">{{post._user.username}}</a>&nbsp;{{post.post}}</h4>
+					   <h5><a href="#/user/{{post._user._id}}">{{post._user.username}}</a>&nbsp;{{post.post}}</h5>
 				  	</div>
 					  <div class="panel-body comments">
 					    <p ng-repeat="comment in comments |filter:post._id">	<a href="#/user/{{comment._user}}">{{comment.commenter}}</a>:{{comment.comment}}</p><a href ng-click="showComment = !showComment">Comment</a>
 					    <div class="panel-footer add-comment" ng-show="showComment" >
 					 	<h5> Comment Here: </h5>
 			        	<textarea ng-model="post.comment" rows="3"></textarea>
-			        	<button class="btn btn-danger" ng-click="addComment(post, topicInfo)">Add Comment</button> 
+			        	<button class="btn btn-comment" ng-click="addComment(post, topicInfo)">Add Comment</button> 
 						</div>
 					 </div>
 					 
